@@ -1,0 +1,15 @@
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/bin/Debug/net10.0/01_Review
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/bin/Debug/net10.0/01_Review.deps.json
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/bin/Debug/net10.0/01_Review.runtimeconfig.json
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/bin/Debug/net10.0/01_Review.dll
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/bin/Debug/net10.0/01_Review.pdb
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.AssemblyInfoInputs.cache
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.AssemblyInfo.cs
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.csproj.CoreCompileInputs.cache
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.sourcelink.json
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.dll
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/refint/01_Review.dll
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.pdb
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/01_Review.genruntimeconfig.cache
+/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/01_Review/obj/Debug/net10.0/ref/01_Review.dll
