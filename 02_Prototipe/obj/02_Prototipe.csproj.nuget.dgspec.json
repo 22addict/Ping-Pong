@@ -1,30 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/02_Prototipe/02_Prototipe.csproj": {}
+    "C:\\Users\\addict\\Projects\\Pet-Projects\\Ping-Pong\\02_Prototipe\\02_Prototipe.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/02_Prototipe/02_Prototipe.csproj": {
+    "C:\\Users\\addict\\Projects\\Pet-Projects\\Ping-Pong\\02_Prototipe\\02_Prototipe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/02_Prototipe/02_Prototipe.csproj",
+        "projectUniqueName": "C:\\Users\\addict\\Projects\\Pet-Projects\\Ping-Pong\\02_Prototipe\\02_Prototipe.csproj",
         "projectName": "02_Prototipe",
-        "projectPath": "/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/02_Prototipe/02_Prototipe.csproj",
-        "packagesPath": "/home/addict/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/addict/Projects/Pet-Projects/Ping-Pong/02_Prototipe/obj/",
+        "projectPath": "C:\\Users\\addict\\Projects\\Pet-Projects\\Ping-Pong\\02_Prototipe\\02_Prototipe.csproj",
+        "packagesPath": "C:\\Users\\addict\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\addict\\Projects\\Pet-Projects\\Ping-Pong\\02_Prototipe\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/addict/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\addict\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -39,10 +45,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -60,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.115/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -2,8 +2,8 @@
 bool menu = true;
 bool game;
 
-int length = 25;
-int width = 80;
+int length = 27;
+int width = 120;
 
 int ballY = length / 2;
 int ballX = width / 2;
@@ -11,7 +11,7 @@ int ballDirY = 1;
 int ballDirX = 1;
 
 
-int paddleSize = 3;
+int paddleSize = 5;
 int halfPaddle = paddleSize / 2;
 int paddleGap = 1;
 
@@ -55,12 +55,13 @@ void MainGame()
                     KeyControlsInGame();
                     if (game) MoveBall();
 
-                    Thread.Sleep(111);
+                    Thread.Sleep(50);
                 }
                 break;
             case ConsoleKey.D2:
                 while (true)
                 {
+                    Console.Clear();
                     Console.WriteLine("\nВы уверенны, что хотите выйти?");
                     Console.WriteLine("Нажмите '1', если уверены");
                     Console.WriteLine("Нажмите '2', если хотите вернутся в меню");
@@ -109,7 +110,7 @@ void DrawField()
         {
             if (y == length - 1 || y == length - length || x == width - 1 || x == width - width)
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("#");
                 Console.ResetColor();
             }
@@ -151,16 +152,20 @@ void KeyInitInGame()
     switch (moveKey.Key)
     {
         case ConsoleKey.A:
-            if (leftPaddleY > minPaddleY) leftPaddleY--;
+            leftPaddleY -= paddleSize;
+            if (leftPaddleY < minPaddleY) leftPaddleY = minPaddleY;
             break;
         case ConsoleKey.K:
-            if (rightPaddleY > minPaddleY) rightPaddleY--;
+            rightPaddleY -= paddleSize;
+            if (rightPaddleY < minPaddleY) rightPaddleY = minPaddleY;
             break;
         case ConsoleKey.Z:
-            if (leftPaddleY < maxPaddleY) leftPaddleY++;
+            leftPaddleY += paddleSize;
+            if (leftPaddleY > maxPaddleY) leftPaddleY = maxPaddleY;
             break;
         case ConsoleKey.M:
-            if (rightPaddleY < maxPaddleY) rightPaddleY++;
+            rightPaddleY += paddleSize;
+            if (rightPaddleY > maxPaddleY) rightPaddleY = maxPaddleY;
             break;
         case ConsoleKey.Escape:
             leftPlayer = 0;
@@ -170,12 +175,12 @@ void KeyInitInGame()
             menu = true;
             break;
         default:
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Error! Нажаты неверные клавиши.");
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Игра на паузе.");
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Левая ракетка: клавиши 'A' | 'Z'");
             Console.WriteLine("Правая ракетка: клавиши 'K' | 'M'");
-            Console.WriteLine("Что бы выйти, нажмите 'Esc'");
+            Console.WriteLine("Что бы выйти в меню, нажмите 'Esc'");
             Console.ResetColor();
             Console.ReadKey();
             Console.Clear();
@@ -225,22 +230,26 @@ void GameScore()
 
     if (leftPlayer == 3)
     {
-        Console.WriteLine("Победил левый игрок!");
-        Console.ReadKey();
-        Console.Clear();
-        leftPlayer = 0;
-        rightPlayer = 0;
-        game = false;
-        menu = true;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        PlayerWin("Победил левый игрок!");
+        Console.ResetColor();
     }
     else if (rightPlayer == 3)
     {
-        Console.WriteLine("Победил правый игрок!");
-        Console.ReadKey();
-        Console.Clear();
-        rightPlayer = 0;
-        leftPlayer = 0;
-        game = false;
-        menu = true;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        PlayerWin("Победил правый игрок!");
+        Console.ResetColor();
     }
+}
+
+void PlayerWin(string win)
+{
+    Console.WriteLine(win);
+    Console.ReadKey();
+    Console.ReadKey();
+    Console.Clear();
+    rightPlayer = 0;
+    leftPlayer = 0;
+    game = false;
+    menu = true;
 }
